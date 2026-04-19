@@ -52,40 +52,6 @@ A full-stack real-time chat application built using **React.js, Node.js, Express
 
 ---
 
-## 📂 Project Structure
-Chat-App/
-│
-### 🖥️ Client (Frontend)
-│
-├── public/
-│   └── index.html
-│
-├── src/
-│   ├── components/     → Chat UI components (MessageBox, ChatWindow, etc.)
-│   ├── pages/          → Pages (Chat, Login, Register)
-│   ├── context/        → Global state (User, Chat state)
-│   ├── services/       → Socket.IO + API logic
-│   ├── App.jsx         → Main React component
-│   └── main.jsx        → Entry point
-│
-### ⚙️ Server (Backend)
-│
-├── config/             → Database connection (MongoDB setup)
-├── controllers/        → Business logic
-├── models/             → MongoDB schemas (User, Message)
-├── routes/             → Express routes (API endpoints)
-├── socket/             → Socket.IO event handling (join, send, disconnect)
-├── app.js              → Express app setup
-└── server.js           → Server entry point
-│
-### 🔧 Root Files
-│
-├── .env                → Environment variables
-├── package.json        → Dependencies
-└── README.md
-
-
----
 
 ## 🔄 System Workflow
 
