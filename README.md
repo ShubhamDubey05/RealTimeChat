@@ -55,26 +55,28 @@ A full-stack real-time chat application built using **React.js, Node.js, Express
 ## 📂 Project Structure
 Chat-App/
 │
-├── client/
-│ ├── public/
-│ ├── src/
-│ │ ├── components/ # Chat UI components
-│ │ ├── pages/ # Pages (Chat, Login, etc.)
-│ │ ├── context/ # Global state management
-│ │ ├── services/ # Socket/API logic
-│ │ ├── App.jsx
-│ │ └── main.jsx
+├── client/ (Frontend)
+│   ├── public/
+│   │   └── index.html
+│   │
+│   ├── src/
+│   │   ├── components/      # Chat UI components (MessageBox, ChatWindow, etc.)
+│   │   ├── pages/           # Pages (Chat, Login, Register, etc.)
+│   │   ├── context/         # Global state management (User, Chat state)
+│   │   ├── services/        # Socket.IO & API logic
+│   │   ├── App.jsx          # Main React component
+│   │   └── main.jsx         # Entry point
 │
-├── server/
-│ ├── config/ # DB configuration
-│ ├── controllers/ # Business logic
-│ ├── models/ # MongoDB schemas
-│ ├── routes/ # API routes (if any)
-│ ├── socket/ # Socket.IO logic
-│ ├── app.js
-│ └── server.js
+├── server/ (Backend)
+│   ├── config/              # Database connection (MongoDB config)
+│   ├── controllers/        # Business logic
+│   ├── models/             # MongoDB schemas (User, Message)
+│   ├── routes/             # Express routes (if used)
+│   ├── socket/             # Socket.IO event handling (join, send message, disconnect)
+│   ├── app.js              # Express app setup
+│   └── server.js           # Server entry point
 │
-├── .env
+├── .env                    # Environment variables
 ├── package.json
 └── README.md
 
